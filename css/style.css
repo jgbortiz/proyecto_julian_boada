@@ -1,0 +1,249 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;1,500;1,800&display=swap');
+
+body{
+    background-color: rgb(34, 30, 30);
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+/* grilla index */
+.grillaggm{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "header header"
+    "titulo titulo"
+    "section section"
+    "img1 img2"
+    "img3 img4  "
+    "footer footer"
+    ;
+    gap: 20px;
+}
+
+header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    grid-area: header;
+    height: 50px;
+}
+
+.menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* menu */
+.menuHeader ul li a{
+    text-decoration: none;
+    color: white;
+}
+.menuHeader ul li{
+    list-style-type: none;
+    margin: 0 50px;
+}
+
+.menuHeader ul li a:hover{
+    color: black;
+}
+/* --------------- */
+.logo {
+    margin-left: 5%;
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+
+}
+
+.section{
+    grid-area: section;
+    text-align: center;
+    color: white;
+    padding: 0 25%;
+}
+.estiloImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img1 {
+    grid-area: img1;
+    padding-left: 65%;
+}
+.img2 {
+    grid-area: img2;
+    padding-right: 65%;
+}
+.img3 {
+    grid-area: img3;
+    padding-left: 65%;
+}
+.img4 {
+    grid-area: img4;
+    padding-right: 65%;
+    
+}
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    height: 70px;
+    gap: 10%;
+    padding: 10px 0;
+}
+
+footer p{
+    color:white
+}
+/* Medias Queris */
+ 
+@media screen and (max-width: 768px) {
+    .grillaggm{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "titulo"
+        "section"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "footer"
+        ;
+    
+
+    }
+    .menuHeader ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    grid-area: header;
+    height: 110px;
+}
+
+}
+
+/* Pagina delicatessen */
+.grillaggm-delicatessen{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+    "img9 img9 img10 img10"
+    "footer footer footer footer"
+    ;
+    gap: 20px;  
+    
+}
+
+.img1-delicatessen {
+    grid-area: img1;
+    
+}
+.img2-delicatessen {
+    grid-area: img2;
+
+}
+.img3-delicatessen {
+    grid-area: img3;
+}
+.img4-delicatessen {
+    grid-area: img4;
+
+    
+}
+.img5-delicatessen {
+    grid-area: img5;
+}
+.img6-delicatessen {
+    grid-area: img6;
+
+}
+.img7-delicatessen {
+    grid-area: img7;
+}
+.img8-delicatessen {
+    grid-area: img8;
+
+}
+.img9-delicatessen {
+    grid-area: img9;
+    
+}
+.img10-delicatessen {
+    grid-area: img10;
+}
+@media screen and (max-width: 768px) {
+    .grillaggm-delicatessen{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "titulo"
+        "section"
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6"
+        "img7"
+        "img8"
+        "img9"
+        "img10"
+        "footer"
+        ;
+        align-items: center;
+
+    }
+    .menuHeader ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    grid-area: header;
+    height: 110px;
+    
+}
+
+}
