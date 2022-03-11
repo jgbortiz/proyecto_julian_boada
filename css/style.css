@@ -11,6 +11,7 @@
 body{
 
     font-family: 'Roboto Serif', sans-serif;
+    
 }
 
 /* grilla index */
@@ -25,6 +26,8 @@ body{
     "footer footer"
     ;
     gap: 20px;
+    background-color: rgb(230, 230, 200);
+    
 }
 #header{
     background-color: brown;
@@ -39,7 +42,7 @@ header{
     align-items: center;
     grid-area: header;
     height: 50px;
-    background-image: linear-gradient(to left, black, red);
+    background-image: linear-gradient(to left, black, rgb(223, 72, 72));
  
 }
 
@@ -52,7 +55,7 @@ header{
 /* menu */
 .menuHeader ul li a{
     text-decoration: none;
-    color: rgb(22, 22, 22);
+    color: white
     
 }
 .menuHeader ul li{
@@ -61,7 +64,7 @@ header{
 }
 
 .menuHeader ul li a:hover{
-    color: rgb(248, 242, 242);
+    color: rgb(56, 51, 51);
     
 }
 .conteiner{
@@ -78,9 +81,8 @@ header{
     margin-left: 5%;
 }
 .carousel-inner{
-   height: 200px;
-   object-fit: contain;
-    
+height: 200px;
+object-fit: contain;   
 }
 
 .titulo {
@@ -104,7 +106,6 @@ header{
 
 .estiloImg:hover{
     transform: scale(1.5,1.5);
-   
 }
 
 .img1 {
@@ -126,13 +127,13 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 50px;
     gap: 10%;
     padding: 10px 0;
-    background-image: linear-gradient(to left, black, red);
+    background-image: linear-gradient(to left, black, rgb(223, 72, 72));
 }
 
-footer p{
+footer{
     color:white
 }
 
@@ -161,6 +162,7 @@ footer p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
 }
 header{ 
     display: flex;
@@ -169,9 +171,24 @@ header{
     align-items: center;
     background-color: brown;
     grid-area: header;
-    height: 300px;
+    height: 400px;
+    gap: 10%;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    gap: 10%;
+    padding: 10px 0;
+    background-image: linear-gradient(to left, black, rgb(223, 72, 72));
 }
 
+footer{
+    color:white
+}
 }
 
 /* Pagina delicatessen */
@@ -187,6 +204,7 @@ header{
     "footer footer footer footer"
     ;
     gap: 20px;  
+    background-color: rgb(230, 230, 200);
     
 }
 .estiloImg-delicatessen:hover{
@@ -194,43 +212,45 @@ header{
 }
 .img1-delicatessen {
     grid-area: img1;
+    color: rgb(18, 30, 41);
     
 }
 
 
 .img2-delicatessen {
     grid-area: img2;
-
+    color: rgb(18, 30, 41);
 }
 .img3-delicatessen {
     grid-area: img3;
-}
+    color: rgb(18, 30, 41);}
 .img4-delicatessen {
     grid-area: img4;
-
+    color: rgb(18, 30, 41);
     
 }
 .img5-delicatessen {
     grid-area: img5;
-}
+    color: rgb(18, 30, 41);}
 .img6-delicatessen {
     grid-area: img6;
-
+    color: rgb(18, 30, 41);
 }
 .img7-delicatessen {
     grid-area: img7;
-}
+    color: rgb(18, 30, 41);}
 .img8-delicatessen {
     grid-area: img8;
-
+    color: rgb(18, 30, 41);
 }
 .img9-delicatessen {
     grid-area: img9;
-    
+    color: rgb(18, 30, 41);    
 }
 .img10-delicatessen {
     grid-area: img10;
-}
+    color: rgb(18, 30, 41);}
+
 @media screen and (max-width: 768px) {
     .grillaggm-delicatessen{
         display: grid;
@@ -271,5 +291,208 @@ header{
     height: 110px;
     
 }
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    gap: 10%;
+    padding: 10px 0;
+    background-image: linear-gradient(to left, black, rgb(223, 72, 72));
+}
+
+footer{
+    color:white
+}
+}
+.grillaggm-contacto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "header"
+    "section"
+    "form"
+    "footer"
+    ;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(140, 240, 223);   
+    grid-area: form;
+    height: 450px;
+}
+.section-contacto{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    grid-area: section;
+    background-color: rgb(140, 240, 223);
+    padding-top: 5px;
 
 }
+.menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .grillaggm-contacto{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "form"
+        "footer"
+        ;
+        
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(140, 240, 223);   
+        grid-area: form;
+        height: 450px;
+    }
+    .section-contacto{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        grid-area: section;
+        background-color: rgb(140, 240, 223);
+        padding-top: 5px;
+
+    }
+    .menuHeader ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+}
+
+/* staff */
+.grillaggm-staff{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "header"
+    "section"
+    "footer"
+    ;
+    
+}
+
+.section-staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 200);   
+    grid-area: form;
+    height: 650px;
+}
+.section-staff p{
+    padding: 25px 0;
+}
+@media screen and (max-width: 768px) {
+    
+    .grillaggm-staff{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "footer"
+        ;       
+    }
+    .section-staff{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(230, 230, 200);   
+        grid-area: form;
+        height: 630px;
+    }
+    .menuHeader ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+}
+/* **************** */
+
+/* Quienes Somos */
+
+.grillaggm-quienesSomos{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "header"
+    "section"
+    "footer"
+    ;
+    
+}
+
+.section-quienesSomos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 200);   
+    grid-area: section;
+    height: 300px;
+}
+
+.section-quienesSomos h1{
+    padding: 25px 0;
+}
+@media screen and (max-width: 768px) {
+    
+    .grillaggm-quienesSomos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+        "header"
+        "section"
+        "footer"
+        ;       
+    }
+    .section-quienesSomos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(230, 230, 200);   
+        grid-area: section;
+        height: 850px;
+    }
+    .menuHeader ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+
+}
+
