@@ -52,7 +52,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-/* menu */
+
 .menuHeader ul li a{
     text-decoration: none;
     color: white
@@ -76,7 +76,7 @@ header{
     
 }
 
-/* --------------- */
+
 .logo {
     margin-left: 5%;
 }
@@ -131,14 +131,10 @@ footer {
     gap: 10%;
     padding: 10px 0;
     background-image: linear-gradient(to left, black, rgb(223, 72, 72));
-}
-
-footer{
     color:white
 }
 
-/* Medias Queris */
- 
+
 @media screen and (max-width: 768px) {
     .grillaggm{
         display: grid;
@@ -184,11 +180,9 @@ footer {
     gap: 10%;
     padding: 10px 0;
     background-image: linear-gradient(to left, black, rgb(223, 72, 72));
-}
-
-footer{
     color:white
 }
+
 }
 
 /* Pagina delicatessen */
@@ -301,10 +295,8 @@ footer {
     gap: 10%;
     padding: 10px 0;
     background-image: linear-gradient(to left, black, rgb(223, 72, 72));
-}
+    color: white
 
-footer{
-    color:white
 }
 }
 .grillaggm-contacto{
