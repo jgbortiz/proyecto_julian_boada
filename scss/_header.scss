@@ -1,0 +1,29 @@
+#header {
+    background-color: brown;
+    align-items: center; }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    height: 50px;
+    background-image: linear-gradient(to left, black, #df4848); }
+
+  .menuHeader ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  
+  .menuHeader ul li a {
+    text-decoration: none;
+    color: #eef1ec; }
+  
+  .menuHeader ul li {
+    list-style-type: none;
+    margin: 0 50px; }
+  
+  .menuHeader ul li a:hover {
+    color: #383333; }

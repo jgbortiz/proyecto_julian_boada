@@ -1,5 +1,35 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,300;1,500;1,800&display=swap");
+#header {
+  background-color: brown;
+  align-items: center; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  height: 50px;
+  background-image: linear-gradient(to left, black, #df4848); }
+
+.menuHeader ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.menuHeader ul li a {
+  text-decoration: none;
+  color: #eef1ec; }
+
+.menuHeader ul li {
+  list-style-type: none;
+  margin: 0 50px; }
+
+.menuHeader ul li a:hover {
+  color: #383333; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -192,9 +222,9 @@ footer {
   .grillaggm-delicatessen {
     display: grid;
     justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "header" "titulo" "section" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "footer";
-    align-items: center; }
+    grid-template-areas: "header" "titulo" "section" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "footer"; }
   .menuHeader ul {
     display: flex;
     flex-direction: column;
@@ -324,8 +354,7 @@ form {
   justify-content: center;
   align-items: center;
   background-color: #e6e6c8;
-  grid-area: section;
-  height: 300px; }
+  height: 600px; }
 
 .section-quienesSomos h1 {
   padding: 25px 0; }
