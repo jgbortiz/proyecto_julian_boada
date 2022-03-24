@@ -34,10 +34,6 @@ header {
   margin: 0;
   padding: 0; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 body {
   font-family: 'Roboto Serif', sans-serif; }
 
@@ -95,7 +91,7 @@ header {
   color: #161616;
   padding-top: 50px; }
 
-.section {
+.section, .section-contacto, .section-staff {
   grid-area: section;
   text-align: center;
   color: #331a1a;
@@ -146,15 +142,14 @@ footer {
     align-items: center;
     background-color: brown;
     grid-area: header;
-    height: 450px;
-    gap: 10%; }
+    height: 110px; }
   .footer {
     grid-area: footer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: px;
     gap: 10%;
     padding: 10px 0;
     background-image: linear-gradient(to left, black, #df4848);
@@ -258,9 +253,6 @@ form {
   height: 450px; }
 
 .section-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   grid-area: section;
   background-color: #8cf0df;
   padding-top: 5px; }
@@ -304,10 +296,6 @@ form {
   grid-template-areas: "header" "section" "footer"; }
 
 .section-staff {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #e6e6c8;
   grid-area: form;
   height: 650px; }
